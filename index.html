@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doreen Oyugi - Pharmacy Professional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/png" href="assets/Pharma.png">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#2563eb',
+                        secondary: '#1e40af',
+                        accent: '#10b981', // Emerald 500
+                        'accent-dark': '#059669', // Emerald 600
+                        light: '#f0f9ff',
+                        dark: '#0f172a'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <a href="#home" class="text-2xl font-bold text-primary">Doreen Oyugi</a>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#home" class="text-gray-600 hover:text-primary">Home</a>
+                <a href="#about-me" class="text-gray-600 hover:text-primary">About</a>
+                <a href="#statistics" class="text-gray-600 hover:text-primary">Statistics</a>
+                <a href="#experience" class="text-gray-600 hover:text-primary">Experience</a>
+                <a href="#education" class="text-gray-600 hover:text-primary">Education</a>
+                <a href="#skills" class="text-gray-600 hover:text-primary">Skills</a>
+                <a href="#contact" class="bg-primary text-white px-4 py-2 rounded-md hover:bg-secondary transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="text-gray-600 hover:text-primary focus:outline-none" aria-label="Open main menu" aria-controls="mobile-menu" aria-expanded="false">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t">
+            <a href="#home" class="block py-2 px-4 text-sm hover:bg-gray-100">Home</a>
+            <a href="#about-me" class="block py-2 px-4 text-sm hover:bg-gray-100">About</a>
+            <a href="#statistics" class="block py-2 px-4 text-sm hover:bg-gray-100">Statistics</a>
+            <a href="#experience" class="block py-2 px-4 text-sm hover:bg-gray-100">Experience</a>
+            <a href="#education" class="block py-2 px-4 text-sm hover:bg-gray-100">Education</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-100">Skills</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main>
+
+    <!-- New Hero Section -->
+    <section id="home" class="relative py-24 md:py-32 text-white">
+        <!-- Background Image and Overlay -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/Pharmacy-Shelve.avif'); filter: blur(4px);"></div>
+            <div class="absolute inset-0 bg-primary/70"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Text Content -->
+                <div class="md:w-3/5 text-center md:text-left mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-4">Doreen Oyugi</h1>
+                    <p class="text-xl md:text-2xl text-emerald-300 font-medium mb-6">Licenced pharmtech | Healthcare Professional</p>
+                    <p class="text-gray-200 max-w-xl mx-auto md:mx-0 mb-8">Dedicated healthcare professional with extensive experience in pharmacy management, patient care, and team leadership. Committed to delivering exceptional pharmaceutical services and optimizing patient treatment outcomes.</p>
+                    <div class="flex justify-center md:justify-start space-x-4">
+                        <a href="#contact" class="bg-accent text-white px-6 py-3 rounded-md hover:bg-accent-dark transition-colors font-semibold">Get In Touch</a>
+                        <a href="#experience" class="bg-white/20 text-white px-6 py-3 rounded-md border border-white/50 hover:bg-white/30 transition-colors font-semibold">View Experience</a>
+                    </div>
+                </div>
+                <!-- Image -->
+                <div class="md:w-2/5 flex justify-center">
+                    <div class="relative w-64 h-64 md:w-80 md:h-80">
+                        <div class="absolute inset-0 bg-gradient-to-br from-primary to-accent rounded-full -rotate-12 transition-transform duration-500 hover:rotate-0"></div>
+                        <div class="absolute inset-2 bg-primary/50 backdrop-blur-sm rounded-full p-2">
+                            <!-- Main Background Image (Pharmacy Shelf) -->
+                            <div class="relative w-full h-full rounded-full bg-cover bg-center" style="background-image: url('assets/Pharmacy-Shelve.avif')">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updated About Me Section -->
+    <section id="about-me" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark">About Me</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">A passionate healthcare professional with a strong commitment to pharmaceutical excellence and patient care, bringing years of experience in pharmacy management and team leadership.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-12 items-center">
+                <!-- Image -->
+                <div class="flex justify-center">
+                    <img src="assets/Pic.png" alt="Doreen Oyugi" class="rounded-full w-64 h-64 object-cover border-8 border-white shadow-lg">
+                </div>
+
+                <!-- Professional Objective -->
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-semibold text-primary mb-4">Professional Objective</h3>
+                    <p class="text-gray-700 mb-4">To obtain a position in the health pharmacy technician field where my warm and accommodating personality will best serve clients. I am committed to leveraging my extensive experience in pharmacy management to contribute to exceptional patient care and operational excellence.</p>
+                    <p class="text-gray-700">With a strong foundation in pharmaceutical sciences and hands-on experience in branch management, I bring a unique combination of technical expertise and leadership skills to drive positive outcomes in healthcare settings.</p>
+                </div>
+            </div>
+
+            <!-- Core Competencies -->
+            <div class="mt-16">
+                <h3 class="text-2xl font-semibold text-dark text-center mb-8">Core Competencies</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Competency Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="bg-primary/10 text-primary text-3xl w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4"><i class="fas fa-hand-holding-heart"></i></div>
+                        <h4 class="font-semibold text-dark text-lg mb-2">Patient-Centered Care</h4>
+                        <p class="text-sm text-gray-600">Dedicated to providing exceptional pharmaceutical care with a focus on patient outcomes and safety.</p>
+                    </div>
+                    <!-- Competency Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="bg-primary/10 text-primary text-3xl w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4"><i class="fas fa-users"></i></div>
+                        <h4 class="font-semibold text-dark text-lg mb-2">Team Leadership</h4>
+                        <p class="text-sm text-gray-600">Experienced in managing pharmacy teams and fostering collaborative healthcare environments.</p>
+                    </div>
+                    <!-- Competency Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="bg-primary/10 text-primary text-3xl w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4"><i class="fas fa-chart-line"></i></div>
+                        <h4 class="font-semibold text-dark text-lg mb-2">Data-Driven Results</h4>
+                        <p class="text-sm text-gray-600">Skilled in inventory management, sales analysis, and performance optimization.</p>
+                    </div>
+                    <!-- Competency Card -->
+                    <div class="bg-white p-6 rounded-xl shadow-md text-center hover:shadow-lg hover:-translate-y-1 transition-all">
+                        <div class="bg-primary/10 text-primary text-3xl w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4"><i class="fas fa-clipboard-check"></i></div>
+                        <h4 class="font-semibold text-dark text-lg mb-2">Regulatory Compliance</h4>
+                        <p class="text-sm text-gray-600">Expert knowledge of pharmaceutical regulations and safety protocols.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark">Professional Statistics</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Quantified achievements and performance metrics from my career.</p>
+            </div>
+
+            <!-- Updated Quantified Achievements -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center mb-16">
+                <div class="bg-light p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="text-primary text-4xl mb-3"><i class="fas fa-calendar-alt"></i></div>
+                    <h3 class="text-3xl font-bold text-dark">7+</h3>
+                    <p class="text-gray-600 mt-1">Years Experience</p>
+                </div>
+                <div class="bg-light p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="text-primary text-4xl mb-3"><i class="fas fa-users"></i></div>
+                    <h3 class="text-3xl font-bold text-dark">1000+</h3>
+                    <p class="text-gray-600 mt-1">Patients Served</p>
+                </div>
+                <div class="bg-light p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="text-accent text-4xl mb-3"><i class="fas fa-bullseye"></i></div>
+                    <h3 class="text-3xl font-bold text-dark">99%</h3>
+                    <p class="text-gray-600 mt-1">Accuracy Rate</p>
+                </div>
+                <div class="bg-light p-6 rounded-2xl shadow-md hover:shadow-lg hover:-translate-y-1 transition-all">
+                    <div class="text-accent text-4xl mb-3"><i class="fas fa-smile"></i></div>
+                    <h3 class="text-3xl font-bold text-dark">95%</h3>
+                    <p class="text-gray-600 mt-1">Client Satisfaction</p>
+                </div>
+            </div>
+
+            <div class="grid lg:grid-cols-5 gap-12">
+                <!-- Performance Metrics -->
+                <div class="lg:col-span-3 bg-light p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-dark mb-6">Performance Metrics</h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">Branch Performance</span>
+                                <span class="font-bold text-primary">92%</span>
+                            </div>
+                            <div class="w-full bg-white rounded-full h-3"><div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="92"></div></div>
+                            <p class="text-sm text-gray-500 mt-1">Exceeded monthly sales targets consistently.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">Team Efficiency</span>
+                                <span class="font-bold text-primary">88%</span>
+                            </div>
+                            <div class="w-full bg-white rounded-full h-3"><div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="88"></div></div>
+                            <p class="text-sm text-gray-500 mt-1">Improved team productivity and workflow.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">Inventory Optimization</span>
+                                <span class="font-bold text-accent">95%</span>
+                            </div>
+                            <div class="w-full bg-white rounded-full h-3"><div class="bg-accent h-3 rounded-full skill-bar" style="width: 0%" data-width="95"></div></div>
+                            <p class="text-sm text-gray-500 mt-1">Reduced waste and improved stock management.</p>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="font-medium text-gray-700">Compliance Score</span>
+                                <span class="font-bold text-accent">98%</span>
+                            </div>
+                            <div class="w-full bg-white rounded-full h-3"><div class="bg-accent h-3 rounded-full skill-bar" style="width: 0%" data-width="98"></div></div>
+                            <p class="text-sm text-gray-500 mt-1">Maintained regulatory compliance standards.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Timeline -->
+                <div class="lg:col-span-2 bg-light p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-2xl font-semibold text-dark mb-6">Professional Timeline</h3>
+                    <div class="relative border-l-2 border-primary pl-6 space-y-8">
+                        <div class="relative">
+                            <div class="absolute -left-[34px] top-1 w-4 h-4 bg-primary rounded-full border-4 border-white"></div>
+                            <p class="font-semibold text-primary">2023 - Present</p>
+                            <h4 class="font-bold text-dark">Branch Manager</h4>
+                            <p class="text-sm text-gray-600">Leading pharmacy operations at mPharma Kenya.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[34px] top-1 w-4 h-4 bg-primary rounded-full border-4 border-white"></div>
+                            <p class="font-semibold text-primary">2019</p>
+                            <h4 class="font-bold text-dark">Professional Certification</h4>
+                            <p class="text-sm text-gray-600">Licensed Pharmacy Technician.</p>
+                        </div>
+                        <div class="relative">
+                            <div class="absolute -left-[34px] top-1 w-4 h-4 bg-primary rounded-full border-4 border-white"></div>
+                            <p class="font-semibold text-primary">2016 - 2019</p>
+                            <h4 class="font-bold text-dark">Diploma in Pharmacy</h4>
+                            <p class="text-sm text-gray-600">Kenya Medical Training College.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark">Professional Experience</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Comprehensive healthcare and pharmacy management experience.</p>
+            </div>
+            
+            <!-- Timeline Container -->
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Vertical Line -->
+                <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-primary/20"></div>
+
+                <!-- Timeline Item -->
+                <div class="relative group">
+                    <!-- Timeline Dot -->
+                    <div class="absolute left-1/2 -translate-x-1/2 top-8 w-5 h-5 bg-primary rounded-full border-4 border-light group-hover:scale-125 transition-transform"></div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Left Side: Role and Company -->
+                        <div class="md:text-right md:pr-16">
+                            <div class="bg-white p-8 rounded-2xl shadow-lg relative">
+                                <!-- Arrow -->
+                                <div class="hidden md:block absolute right-0 top-10 translate-x-full w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-white"></div>
+                                <p class="text-gray-500 font-medium">2023 - Present</p>
+                                <h3 class="text-2xl font-bold text-primary mt-1">Branch Manager</h3>
+                                <p class="text-lg text-gray-700 font-semibold">mPharma Kenya</p>
+                                <p class="mt-4 text-gray-600">Leading pharmacy operations with a focus on patient care, team management, and regulatory compliance.</p>
+                            </div>
+                        </div>
+
+                        <!-- Right Side: Responsibilities -->
+                        <div class="md:pl-16">
+                            <div class="bg-white p-8 rounded-2xl shadow-lg relative">
+                                <!-- Arrow for mobile/stacked view -->
+                                <div class="md:hidden absolute left-8 -top-2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-white"></div>
+                                <h4 class="text-xl font-semibold text-dark mb-4">Key Responsibilities</h4>
+                                <div class="space-y-3 text-gray-700">
+                                    <div class="flex items-start"><i class="fas fa-clinic-medical text-accent w-5 mt-1 mr-3"></i><span>Support nursing team with pharmacy and patient communication.</span></div>
+                                    <div class="flex items-start"><i class="fas fa-boxes-stacked text-accent w-5 mt-1 mr-3"></i><span>Maintain pharmacy inventory and manage stock orders.</span></div>
+                                    <div class="flex items-start"><i class="fas fa-handshake-angle text-accent w-5 mt-1 mr-3"></i><span>Provide excellent customer service to customers and suppliers.</span></div>
+                                    <div class="flex items-start"><i class="fas fa-chart-pie text-accent w-5 mt-1 mr-3"></i><span>Prepare weekly and monthly sales reports for line managers.</span></div>
+                                    <div class="flex items-start"><i class="fas fa-file-medical text-accent w-5 mt-1 mr-3"></i><span>Keep patient records and follow up on chronic patients.</span></div>
+                                    <div class="flex items-start"><i class="fas fa-prescription-bottle-medical text-accent w-5 mt-1 mr-3"></i><span>Organize medication and provide OTC consultations.</span></div>
+                                    <div class="flex items-start"><i class="fas fa-heart-pulse text-accent w-5 mt-1 mr-3"></i><span>Perform health checks (glucose, BP, BMI).</span></div>
+                                    <div class="flex items-start"><i class="fas fa-shield-virus text-accent w-5 mt-1 mr-3"></i><span>Maintain a safe and clean environment per SOPs.</span></div>
+                                    <div class="flex items-start"><i class="fas fa-dolly text-accent w-5 mt-1 mr-3"></i><span>Ensure stock control and expiry monitoring.</span></div>
+                                    <div class="flex items-start"><i class="fas fa-clipboard-check text-accent w-5 mt-1 mr-3"></i><span>Participate in branch stock counts and receive deliveries.</span></div>
+                                    <div class="flex items-start"><i class="fas fa-gavel text-accent w-5 mt-1 mr-3"></i><span>Adhere to the Dangerous Drug Act Regulation.</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Add more timeline items here if needed -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark">Education & Certification</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">My professional pharmaceutical education and training journey.</p>
+            </div>
+
+            <!-- Timeline Container -->
+            <div class="relative max-w-5xl mx-auto">
+                <!-- Vertical Line -->
+                <div class="absolute left-1/2 -translate-x-1/2 h-full w-0.5 bg-primary/20"></div>
+
+                <!-- Timeline Item: Diploma -->
+                <div class="relative group mb-12">
+                    <!-- Timeline Dot -->
+                    <div class="absolute left-1/2 -translate-x-1/2 top-8 w-5 h-5 bg-primary rounded-full border-4 border-white group-hover:scale-125 transition-transform"></div>
+
+                    <div class="grid md:grid-cols-2 gap-8">
+                        <!-- Left Side: Degree and Institution -->
+                        <div class="md:text-right md:pr-16">
+                            <div class="bg-light p-8 rounded-2xl shadow-lg relative">
+                                <!-- Arrow -->
+                                <div class="hidden md:block absolute right-0 top-10 translate-x-full w-0 h-0 border-t-8 border-t-transparent border-b-8 border-b-transparent border-l-8 border-l-light"></div>
+                                <p class="text-gray-500 font-medium">2016 - 2019</p>
+                                <h3 class="text-2xl font-bold text-primary mt-1">Diploma in Pharmacy</h3>
+                                <p class="text-lg text-gray-700 font-semibold">Kenya Medical Training College</p>
+                                <p class="mt-4 text-gray-600">Comprehensive training in pharmaceutical sciences and clinical practice.</p>
+                            </div>
+                        </div>
+
+                        <!-- Right Side: Core Areas of Study -->
+                        <div class="md:pl-16">
+                            <div class="bg-light p-8 rounded-2xl shadow-lg relative">
+                                <!-- Arrow for mobile -->
+                                <div class="md:hidden absolute left-8 -top-2 w-0 h-0 border-l-8 border-l-transparent border-r-8 border-r-transparent border-b-8 border-b-light"></div>
+                                <h4 class="text-xl font-semibold text-dark mb-4">Core Areas of Study</h4>
+                                <div class="grid grid-cols-2 gap-4 text-gray-700">
+                                    <div class="flex items-center bg-white p-3 rounded-lg shadow-sm"><i class="fas fa-flask text-accent mr-2"></i><span>Pharmaceutical Sciences</span></div>
+                                    <div class="flex items-center bg-white p-3 rounded-lg shadow-sm"><i class="fas fa-clinic-medical text-accent mr-2"></i><span>Clinical Pharmacy</span></div>
+                                    <div class="flex items-center bg-white p-3 rounded-lg shadow-sm"><i class="fas fa-pills text-accent mr-2"></i><span>Pharmacology</span></div>
+                                    <div class="flex items-center bg-white p-3 rounded-lg shadow-sm"><i class="fas fa-tasks text-accent mr-2"></i><span>Pharmaceutical Management</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-16 md:py-24 bg-light">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-dark">Professional Skills</h2>
+                <p class="text-lg text-gray-600 mt-4 max-w-3xl mx-auto">Comprehensive skill set developed through education and professional experience.</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Technical Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-dark mb-6 border-b pb-3 flex items-center">
+                        <i class="fas fa-laptop-code text-primary mr-3"></i> Technical Skills
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Pharmaceutical Knowledge</span>
+                                <span class="text-primary font-bold">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Inventory Management</span>
+                                <span class="text-primary font-bold">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Data Analysis</span>
+                                <span class="text-primary font-bold">85%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Regulatory Compliance</span>
+                                <span class="text-primary font-bold">92%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="92"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-dark mb-6 border-b pb-3 flex items-center">
+                        <i class="fas fa-comments text-primary mr-3"></i> Soft Skills
+                    </h3>
+                    <div class="space-y-6">
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Communication</span>
+                                <span class="text-primary font-bold">95%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="95"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Team Leadership</span>
+                                <span class="text-primary font-bold">88%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Problem Solving</span>
+                                <span class="text-primary font-bold">90%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-2">
+                                <span class="text-gray-700 font-medium">Adaptability</span>
+                                <span class="text-primary font-bold">87%</span>
+                            </div>
+                            <div class="w-full bg-gray-200 rounded-full h-3">
+                                <div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="87"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Skills -->
+                <div class="bg-white p-8 rounded-2xl shadow-lg md:col-span-2 lg:col-span-1">
+                    <h3 class="text-xl font-semibold text-dark mb-6 border-b pb-3 flex items-center">
+                        <i class="fas fa-user-tie text-primary mr-3"></i> Professional Skills
+                    </h3>
+                    <div class="space-y-6">
+                        <div><div class="flex justify-between mb-2"><span class="text-gray-700 font-medium">Patient Care</span><span class="text-primary font-bold">96%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="96"></div></div></div>
+                        <div><div class="flex justify-between mb-2"><span class="text-gray-700 font-medium">Quality Assurance</span><span class="text-primary font-bold">93%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="93"></div></div></div>
+                        <div><div class="flex justify-between mb-2"><span class="text-gray-700 font-medium">Training & Development</span><span class="text-primary font-bold">85%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="85"></div></div></div>
+                        <div><div class="flex justify-between mb-2"><span class="text-gray-700 font-medium">Process Improvement</span><span class="text-primary font-bold">88%</span></div><div class="w-full bg-gray-200 rounded-full h-3"><div class="bg-primary h-3 rounded-full skill-bar" style="width: 0%" data-width="88"></div></div></div>
+                    </div>
+                </div>
+
+                <!-- Other Competencies -->
+                <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center">
+                    <div class="bg-primary/10 text-primary text-3xl w-16 h-16 rounded-full flex items-center justify-center mb-4"><i class="fas fa-language"></i></div>
+                    <h4 class="font-semibold text-dark text-lg mb-1">Languages</h4>
+                    <p class="text-gray-600">English & Swahili</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center">
+                    <div class="bg-primary/10 text-primary text-3xl w-16 h-16 rounded-full flex items-center justify-center mb-4"><i class="fas fa-cogs"></i></div>
+                    <h4 class="font-semibold text-dark text-lg mb-1">Technology</h4>
+                    <p class="text-gray-600">POS Systems, ERP</p>
+                </div>
+                <div class="bg-white p-6 rounded-2xl shadow-lg flex flex-col items-center justify-center text-center">
+                    <div class="bg-primary/10 text-primary text-3xl w-16 h-16 rounded-full flex items-center justify-center mb-4"><i class="fas fa-heartbeat"></i></div>
+                    <h4 class="font-semibold text-dark text-lg mb-1">Specializations</h4>
+                    <p class="text-gray-600">Chronic Care, Diabetes</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative py-16 md:py-24 text-white">
+        <!-- Background Image and Overlay -->
+        <div class="absolute inset-0">
+            <div class="absolute inset-0 bg-cover bg-center" style="background-image: url('assets/Pharmacy-Shelve.avif'); filter: blur(4px) brightness(0.7);"></div>
+            <div class="absolute inset-0 bg-primary/80"></div>
+        </div>
+
+        <div class="container mx-auto px-6 relative">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-white">Get In Touch</h2>
+                <p class="text-lg text-gray-200 mt-4 max-w-3xl mx-auto">Ready to discuss opportunities in healthcare and pharmacy management.</p>
+            </div>
+
+            <div class="max-w-6xl mx-auto grid md:grid-cols-5 gap-12">
+                <!-- Contact Info -->
+                <div class="md:col-span-2 bg-white/10 backdrop-blur-sm p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-white mb-6">Contact Information</h3>
+                    <div class="space-y-6 text-gray-200">
+                        <div class="flex items-start"><i class="fas fa-phone text-accent w-5 mt-1 mr-4"></i><div><h4 class="font-semibold text-white">Phone Number</h4><a href="tel:+254720117386" class="hover:text-accent">+254720117386</a></div></div>
+                        <div class="flex items-start"><i class="fas fa-envelope text-accent w-5 mt-1 mr-4"></i><div><h4 class="font-semibold text-white">Email Address</h4><a href="mailto:doreenoyugi812@gmail.com" class="hover:text-accent">doreenoyugi812@gmail.com</a></div></div>
+                        <div class="flex items-start"><i class="fas fa-map-marker-alt text-accent w-5 mt-1 mr-4"></i><div><h4 class="font-semibold text-white">Location</h4><p>Nairobi, Kenya</p></div></div>
+                        <div class="flex items-start"><i class="fas fa-briefcase text-accent w-5 mt-1 mr-4"></i><div><h4 class="font-semibold text-white">Availability</h4><p>Available for opportunities</p></div></div>
+                    </div>
+                    <h3 class="text-xl font-semibold text-white mb-4 mt-8 pt-6 border-t border-white/20">Professional Interests</h3>
+                    <div class="space-y-3 text-gray-200">
+                        <div class="flex items-center"><i class="fas fa-check-circle text-accent mr-3"></i><span>Pharmacy Management</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-accent mr-3"></i><span>Healthcare Leadership</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-accent mr-3"></i><span>Clinical Pharmacy Roles</span></div>
+                        <div class="flex items-center"><i class="fas fa-check-circle text-accent mr-3"></i><span>Consulting & Training</span></div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="md:col-span-3 bg-white text-dark p-8 rounded-2xl shadow-lg">
+                    <h3 class="text-xl font-semibold text-dark mb-6">Send a Direct Message</h3>
+                    <form id="contact-form" class="space-y-6">
+                        <div class="grid sm:grid-cols-2 gap-6">
+                            <div><label for="full-name" class="block text-sm font-medium text-gray-700 mb-1">Full Name *</label><input type="text" name="full-name" id="full-name" placeholder="Your full name" required class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary bg-gray-50"></div>
+                            <div><label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address *</label><input type="email" name="email" id="email" placeholder="your.email@example.com" required class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary bg-gray-50"></div>
+                        </div>
+                        <div><label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label><input type="tel" name="phone" id="phone" placeholder="+254 xxx xxx xxx" class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary bg-gray-50"></div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-700 mb-1">Subject *</label>
+                            <select id="subject" name="subject" required class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary bg-gray-50">
+                                <option disabled selected>What is your message about?</option>
+                                <option>I'd like to discuss a career opportunity.</option>
+                                <option>I'm interested in your consulting/training services.</option>
+                                <option>I have a question about your experience.</option>
+                                <option>Just wanted to connect!</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message *</label>
+                            <textarea id="message" name="message" rows="4" required placeholder="Please describe your inquiry or opportunity..." class="block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-primary focus:border-primary bg-gray-50"></textarea>
+                        </div>
+                        <div><button type="submit" class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-accent hover:bg-accent-dark focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-accent transition-colors">Send Message via WhatsApp</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-6">
+        <div class="container mx-auto px-6 text-center text-gray-400">
+            <p>&copy; <span id="copyright-year">2025</span> Doreen Oyugi. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button --> <a href="https://wa.me/254720117386?text=Hello%20Doreen%2C%20I%20came%20across%20your%20portfolio%20and%20am%20very%20impressed%20by%20your%20work%20in%20the%20pharmacy%20field.%20I%E2%80%99d%20love%20to%20connect%20and%20learn%20more%20from%20you" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp"><i class="fab fa-whatsapp"></i></a>
+
+    <script src="script.js"></script>
+</body>
+</html>
